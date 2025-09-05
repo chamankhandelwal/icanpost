@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <!-- <h1 class="logo">icanpost</h1>
+    <p>Post id <%=post.id%></p>
+    <h3 class="usrname">@<%= post.usrname %></h2>
+     -->
+      <h1 class="logo">icanpost</h1>
+    <div class="post">
+        <p>ID:<%=post.id%></p>
+            <h3 class="usrname">@<%=post.usrname%></h3>
+            <form action="/posts/<%=post.id%>?_method=PATCH" method="post">
+            <textarea class="content" rows="5" cols="35" name="content"><%= post.content %></textarea>
+            <button type="submit">Done</button>
+            </form>
+            
+        </div>
+</body>
+</html>

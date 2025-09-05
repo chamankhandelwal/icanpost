@@ -1,0 +1,40 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none
+   
+}
+.logo{
+    color: rgb(17, 86, 175);
+}
+.post{
+    background-color: rgb(205, 217, 241);
+    height: 150px;
+    width: 300px;
+    border: 1px solid rgb(8, 68, 171);
+    border-radius: 4px;
+    margin-top: 4px;
+    
+}
+.usrname{
+    font-style: italic;
+    font-weight: bold;
+    background-color: rgb(17, 86, 175);
+}
+.content{
+    color: rgb(56, 55, 55);
+    font-weight: lighter;
+}
+a{
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+    color: rgb(10, 10, 74);
+    font-style: italic;
+    margin-left: 2px;
+}
+button{
+    background-color: rgb(10, 10, 74);
+    color: white;
+    border: 1px solid black;
+    border-radius: 1px;
+}

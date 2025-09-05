@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="logo">icanpost</h1>
+    <% for(post of posts){ %>
+        <div class="post">
+            <h3 class="usrname">@<%= post.usrname %></h3>
+            <p class="content"><%= post.content %></p>
+            <a href="http://localhost:3000/posts/<%=post.id%>">View</a>
+            <a href="http://localhost:3000/posts/<%=post.id%>/edits">Edit</a>
+            <form action="/posts/<%=post.id%>?_method=DELETE"  method="post"><button>Delete</button></form>
+            <br>
+        <% } %>
+
+         <a href="http://localhost:3000/posts/new" style="font-style: normal;">Create Post</a>
+</body>
+</html>
